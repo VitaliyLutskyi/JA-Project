@@ -1,4 +1,4 @@
-package selectionCommitee.dao;
+package selectionCommitee.repository;
 
 import java.util.Optional;
 
