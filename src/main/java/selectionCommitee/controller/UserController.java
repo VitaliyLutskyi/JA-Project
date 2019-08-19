@@ -1,4 +1,4 @@
-package selectionCommitee.controller;
+ package selectionCommitee.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -31,7 +31,7 @@ public class UserController {
 	}
 	
 	@PostMapping(value = "/registration")
-	public String registration(@ModelAttribute("userForm") User user, BindingResult bindingResult, Model model) {
+	public String registration(@ModelAttribute("userForm") User user, BindingResult bindingResult) {
 		if(bindingResult.hasErrors())
 			return "/registration";
 		userService.save(user);
