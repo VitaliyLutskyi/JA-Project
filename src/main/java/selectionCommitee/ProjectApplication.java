@@ -2,12 +2,14 @@ package selectionCommitee;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-public class ProjectTask1DaoLayerApplication {
+@ComponentScan("selectionCommitee")
+public class ProjectApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProjectTask1DaoLayerApplication.class, args);
+		SpringApplication.run(ProjectApplication.class, args);
 	}
 
 }
