@@ -67,7 +67,7 @@
 					<div class="text-center p-t-12">
 						<fieldset>
 							<label><spring:message code="login.choose_language" /></label> 
-							<select	class="text-center p-t-12" id="locales">
+							<select	class="" id="locales">
 								<option value="en"><spring:message code='login.english' /></option>
 								<option value="uk_UA"><spring:message code='login.ukrainian' /></option>
 							</select>
